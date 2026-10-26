@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา - Bella Italia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bella <span>Italia</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="menu.html">เมนูอาหาร</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="reservation.html">สำรองโต๊ะ</a></li>
+                    <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <h1>Contattaci</h1>
+        <p>สอบถามข้อมูลเพิ่มเติม หรือส่งข้อความถึงเรา</p>
+    </div>
+
+    <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+            <div>
+                <h2 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 1.5rem;">ข้อมูลการติดต่อ</h2>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 0.3rem;">📍 ที่อยู่ร้าน</h4>
+                    <p>123 อาคารอิตาเลียพลาซ่า ถนนสุขุมวิท แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพฯ 10110</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 0.3rem;">📞 เบอร์โทรศัพท์</h4>
+                    <p>02-123-4567 / 081-987-6543</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 0.3rem;">✉️ อีเมล</h4>
+                    <p>info@bellaitalia.com</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 0.3rem;">⏰ เวลาทำการ</h4>
+                    <p>มื้อเที่ยง: 11:30 น. - 14:30 น.<br>มื้อค่ำ: 17:30 น. - 22:30 น.<br>(เปิดให้บริการทุกวัน)</p>
+                </div>
+            </div>
+
+            <div class="form-container" style="margin: 0;">
+                <h3 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 1.5rem;">ส่งข้อความถึงเรา</h3>
+                <form onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับข้อความ! เราจะตอบกลับโดยเร็วที่สุด');">
+                    <div class="form-group">
+                        <label for="contact-name">ชื่อของคุณ *</label>
+                        <input type="text" id="contact-name" required placeholder="กรอกชื่อ">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">อีเมล *</label>
+                        <input type="email" id="contact-email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">หัวข้อ *</label>
+                        <input type="text" id="contact-subject" required placeholder="เรื่องที่ต้องการติดต่อ">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg">ข้อความ *</label>
+                        <textarea id="contact-msg" rows="4" required placeholder="รายละเอียดข้อความ..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Trattoria Bella Italia</h3>
+        <p>เปิดบริการทุกวัน: 11:30 น. - 22:30 น.</p>
+        <p>โทรศัพท์: 02-123-4567 | อีเมล: info@bellaitalia.com</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Trattoria Bella Italia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สำรองโต๊ะ - Bella Italia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bella <span>Italia</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="menu.html">เมนูอาหาร</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="reservation.html" class="active">สำรองโต๊ะ</a></li>
+                    <li><a href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <h1>Prenotazione</h1>
+        <p>สำรองโต๊ะล่วงหน้าเพื่อประสบการณ์มื้อพิเศษของคุณ</p>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 style="font-family: var(--font-heading); text-align: center; color: var(--primary-color); margin-bottom: 2rem;">แบบฟอร์มสำรองโต๊ะ</h2>
+            <form onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับการสำรองโต๊ะ! ทางร้านจะติดต่อกลับเพื่อยืนยันอีกครั้ง');">
+                <div class="form-group">
+                    <label for="name">ชื่อ - นามสกุล *</label>
+                    <input type="text" id="name" required placeholder="กรอกชื่อของคุณ">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">อีเมล *</label>
+                        <input type="email" id="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">เบอร์โทรศัพท์ *</label>
+                        <input type="tel" id="phone" required placeholder="08X-XXX-XXXX">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">วันที่ต้องการจอง *</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">เวลา *</label>
+                        <select id="time" required>
+                            <option value="">เลือกเวลา</option>
+                            <option value="11:30">11:30 น.</option>
+                            <option value="12:00">12:00 น.</option>
+                            <option value="13:00">13:00 น.</option>
+                            <option value="17:30">17:30 น.</option>
+                            <option value="18:30">18:30 น.</option>
+                            <option value="19:30">19:30 น.</option>
+                            <option value="20:30">20:30 น.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">จำนวนแขก (ท่าน) *</label>
+                    <select id="guests" required>
+                        <option value="1">1 ท่าน</option>
+                        <option value="2" selected>2 ท่าน</option>
+                        <option value="3-4">3 - 4 ท่าน</option>
+                        <option value="5-6">5 - 6 ท่าน</option>
+                        <option value="7+">มากกว่า 6 ท่าน (จัดเลี้ยง)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">คำขอพิเศษ (เช่น แพ้อาหาร, วันเกิด, ที่นั่งริมหน้าต่าง)</label>
+                    <textarea id="notes" rows="4" placeholder="ระบุคำขอเพิ่มเติม..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">ยืนยันการจองโต๊ะ</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Trattoria Bella Italia</h3>
+        <p>เปิดบริการทุกวัน: 11:30 น. - 22:30 น.</p>
+        <p>โทรศัพท์: 02-123-4567 | อีเมล: info@bellaitalia.com</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Trattoria Bella Italia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
